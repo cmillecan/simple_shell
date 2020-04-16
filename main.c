@@ -7,8 +7,7 @@
  * @env: environment
  * Return: 0
  */
-int main(__attribute__((unused)) int ac,
-		__attribute__((unused)) char **av, char **env)
+int main(__attribute__((unused)) int ac, char **av, char **env)
 {
 	char *input;
 	char **stripped_input;
@@ -39,7 +38,7 @@ int main(__attribute__((unused)) int ac,
 		if (stripped_input == NULL)
 			continue;
 		input = stripped_input[0];
-
+		/* splits/parses input */
 		parsed_input = split(input, " ");
 		if (parsed_input == NULL)
 		{
@@ -49,7 +48,7 @@ int main(__attribute__((unused)) int ac,
 		program = parsed_input[0];
 		/* get path variable from env */
 		pathVar = getEnvVar(env, "PATH");
-		/* then, split pathVar into it's different paths */
+		/* split/parse pathVar */
 		paths = split(pathVar, ":");
 		free(pathVar);
 		for (i = 0; paths[i] != NULL; i++)
