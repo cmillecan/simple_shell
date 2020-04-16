@@ -1,0 +1,23 @@
+.TH SIMPLE_SHELL 1 "16 April 2020" "Holberton School"
+
+.SH NAME
+.B simple_shell
+- man page for simple shell
+
+.SH SYNOPSIS
+.B ./hsh
+
+.SH DESCRIPTION
+
+
+.SH EXAMPLE
+
+
+.SH BUGS
+
+
+.SH AUTHORS
+Andrew Cox, Samuel Messenger, and Constance Millecan
+
+.SH SEE ALSO
+man sh
