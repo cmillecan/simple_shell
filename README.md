@@ -20,12 +20,12 @@ To clone this respository, type
 ```
 git clone https://github.com/cmillecan/simple_shell.git
 ```
-To compile, use following command and flags
+To compile, use the following command and flags
 ```
 gcc -Wall -Werror -Wextra and -pedantic *.c -o hsh
 ```
 
 ## Authors
 * Andrew Cox
-* Constance Millecan
 * Samuel Messenger
+* Constance Millecan
