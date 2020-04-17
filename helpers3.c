@@ -39,7 +39,6 @@ char *prompt_for_input(size_t bufsize)
 {
 	char *input;
 	char **stripped_input;
-	size_t char_count;
 
 	input = malloc(bufsize * sizeof(char));
 	if (input == NULL)
@@ -47,7 +46,7 @@ char *prompt_for_input(size_t bufsize)
 
 	printf("$ ");
 
-	char_count = getline(&input, &bufsize, stdin);
+	getline(&input, &bufsize, stdin);
 
 	stripped_input = split(input, "\n");
 	free(input);

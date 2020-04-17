@@ -33,7 +33,7 @@ Simple Shell files:
 | main.c | Program entry point - int main(void) |
 | helpers.c | Contains str_concat, getEnv, free_str_array, and join functions |
 | helpers2.c | Contains split, strdup, and strcmp functions |
-| helpers3.c | Contains execute function |
+| helpers3.c | Contains execute, prompt_for_input, and path_for_program functions |
 | man_1_simple_shell | Man Page for Simple Shell |
 
 ## Authors
