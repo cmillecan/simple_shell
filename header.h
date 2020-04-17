@@ -8,7 +8,6 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-
 char *read_input(void);
 char **split(char *str, const char *delim);
 char *_strdup(char *str);
@@ -18,6 +17,5 @@ void free_str_arr(char **str_arr);
 char *join(char *str1, char *delim, char *str2);
 char *str_concat(char *s1, char *s2);
 void execute(char **argv);
-
 
 #endif
