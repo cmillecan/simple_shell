@@ -1,7 +1,7 @@
 #include "header.h"
 
 /**
- * main - main function of simple shell
+ * main - main function for simple shell
  * @ac: argument count
  * @av: argument vector
  * @env: environment
