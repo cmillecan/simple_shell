@@ -37,6 +37,6 @@ Simple Shell files:
 | man_1_simple_shell | Man Page for Simple Shell |
 
 ## Authors
-* Andrew Cox
-* Samuel Messenger
-* Constance Millecan
+* [**Andrew Cox**](https://github.com/AndrewC7)
+* [**Samuel Messenger**](https://github.com/Sammessenger)
+* [**Constance Millecan**](https://github.com/cmillecan)
