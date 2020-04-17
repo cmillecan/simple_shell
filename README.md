@@ -24,6 +24,17 @@ To compile, use the following command and flags
 ```
 gcc -Wall -Werror -Wextra and -pedantic *.c -o hsh
 ```
+# Respository Contents
+Simple Shell files:
+
+| **File** | **Description** |
+|----------|-----------------|
+| header.h | Header file containing function prototypes and standard C library header files |
+| main.c | Program entry point - int main(void) |
+| helpers.c | Contains str_concat, getEnv, free_str_array, and join functions |
+| helpers2.c | Contains split, strdup, and strcmp functions |
+| helpers3.c | Contains execute function |
+| man_1_simple_shell | Man Page for Simple Shell |
 
 ## Authors
 * Andrew Cox
