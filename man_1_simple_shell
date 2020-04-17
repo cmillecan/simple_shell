@@ -1,20 +1,48 @@
 .TH SIMPLE_SHELL 1 "16 April 2020" "Holberton School"
 
 .SH NAME
-.B simple_shell
-- man page for simple shell
-
+Simple Shell \- Basic shell based off bash
 .SH SYNOPSIS
-.B ./hsh
-
+.IP
+Simple Shell [options] [command_string | file]
 .SH DESCRIPTION
-
-
-.SH EXAMPLE
-
-
-.SH BUGS
-
+.IP
+Simple Shell is an sh-compatible command language interpreter that executes commands read from the standard input or from a file.
+.SH EXECUTION
+.IP
+The shell parameter $PATH defines the search path for the directory containing the command. Each alternative directory name is separated by a colon (:). The default path is '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'. Each directory in the path is searched for an executable file. If the file has execute permission but is not an a.out file, it is assumed to be a file containing shell commands. A "Chiled Process", i.e. a subshell/separate process is spawned to read it. Each time a command is entered it is concatenated with a path string. These new strings are checked for executability and, if an executable string is found, it is chosen for execution.
+.IP
+This interactive shell reads commands from user input on a tty. Startup files are read by Simple Shell on activation, a prompt is displayed, and job control is enabled by default. This interactive mode has both standard input and standard error that are attached to a tty and prints prompts before reading input (see PS1 and PS2 parameters).
+.IP
+Simple Shell also has a non-interactive mode which allows BASH commands to be read and commands to be executed  from  file
+.SH ENVIRONMENT
+.IP
+The environment is a list of name-value pairs that is passed to an executed program in the same way as a normal argument list. The shell interacts with the environment in several ways. On invocation, the shell scans the environment and creates a parameter for each name found, giving it the corresponding value. Executed commands inherit the same environment. If the user modifies the values of these parameters or creates new ones, none of these affects the environment unless the export command is used to bind the shell's parameter to the environment. The environment seen by any executed command is thus composed of any unmodified name-value pairs originally inherited by the shell, plus any modifications or additions, all of which must be noted in export commands.
+.SH Interactive vs Non-Interactive
+.IP Interactive:
+.IP 
+$ ./hsh
+.IP
+($) /bin/ls
+.IP
+hsh main.c shell.c
+.IP
+($)
+.IP
+($) exit
+.IP
+$
+.IP
+.IP Non-Interactive:
+.IP
+$ echo "/bin/ls" | ./hsh
+.IP
+hsh main.c shell.c test_ls_2
+.IP
+$
+.SH Bugs
+.IP
+No known Bugs
 
 .SH AUTHORS
 Andrew Cox, Samuel Messenger, and Constance Millecan
