@@ -11,7 +11,7 @@ This is the final project for the first trimester at Holberton School. We create
 * A `README.md file`, at the root of the folder of the project is mandatory
 * Your code should use the `Betty` style. It will be checked using `betty-style.pl` and `betty-doc.pl`
 * Your shell should not have any memory leaks
-* No more than 5 functions per file
+* No more than 5functions per file
 * All your header files should be include guarded
 * Use system calls only when you need to
 
